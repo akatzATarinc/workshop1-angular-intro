@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="MyApp">
+<html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
 
@@ -18,26 +18,24 @@
             width: 400px;
             height: 400px;
         }
-body {background:blue;}
-h2 {color: yellow !important;}
     </style>
 </head>
 
 <body>
-    <div ng-controller="AppCtrl" md-theme="default">
+    <div ng-controller="AppCtrl as vm" md-theme="default">
 
       <md-content class="main-content">
         <md-card>
-          <img ng-src="{{imagePath}}" width="200px" height="200px">
+          <img ng-src="{{vm.imagePath}}" width="200px" height="200px">
           <md-card-content>
-            <h2 class="md-title">{{contentTitle}}</h2>
+            <h2 class="md-title">{{vm.contentTitle}}</h2>
             <p>
               When you think you are having a bad day, just think of butterflies with broken wings.
             </p>
           </md-card-content>
           <div>
-            <input placeholder="Set title" ng-model="contentTitle">
-            <button ng-click="setImagePath()">Feel Better</button>
+            <input placeholder="Set title" ng-model="vm.contentTitle">
+            <button ng-click="vm.setImagePath()">Feel Better</button>
           </div>
         </md-card>
       </md-content>
@@ -47,21 +45,6 @@ h2 {color: yellow !important;}
     <script src="bower_components/angular-aria/angular-aria.min.js"></script>
     <script src="bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="bower_components/angular-material/angular-material.min.js"></script>
-    <script>
-
-    angular.module('MyApp', [])
-    .controller('AppCtrl', function($scope) {
-      $scope.title = 'Workshop1 Angular Intro';
-      $scope.contentTitle = '';
-      $scope.setImagePath = function(){
-        if (!$scope.imagePath){
-            $scope.imagePath = 'http://www.catgifs.org/wp-content/uploads/2013/09/119_crazycat_cat_gifs.gif';
-        } else {
-            $scope.imagePath = null;
-        }
-      };
-    });
-
-  </script>
+    <script src="./appCtrl.js"></script>
 </body>
 </html>
