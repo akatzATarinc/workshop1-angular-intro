@@ -18,7 +18,7 @@ We will be working from your local computer to clone down a public repo from git
 
 
 **2.** Install latest node.js <br />
-* [Install Node.js](https://nodejs.org/en/) | [How to install Node.js on Windows](http://blog.teamtreehouse.com/install-node-js-npm-windows) | [How to install node on Mac](http://blog.teamtreehouse.com/install-node-js-npm-mac)
+* [Install Node.js](https://nodejs.org/en/) | [Installing Node.js on Windows](http://blog.teamtreehouse.com/install-node-js-npm-windows) | [How to install node on Mac](http://blog.teamtreehouse.com/install-node-js-npm-mac)
 
 *If you already have node installed, and want to upgrade type the following:*
 
