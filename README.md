@@ -50,7 +50,7 @@ If you haven't configured your global .git configuration on your computer, the f
 
     git config --global user.name "John Doe"
     git config --global user.email johndoe@example.com
-    git config to use *https://* instead of *git://
+    git config --global url."https://".insteadOf git:// 
 
 ***Sidenote*** There are common problems with accesing github and other package registries under a firewall. A common log error for github is 'unable to connect to github.com' when running any commands to clone resources (`npm install, bower install, git clone`). The last git config command should fix this.
 
