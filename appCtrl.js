@@ -1,4 +1,5 @@
 (function() {
+    'use strict';
 	angular.module('myApp', [])
     .controller('AppCtrl', function() {
       var vm = this;
