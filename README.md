@@ -89,7 +89,7 @@ The following command will point to a package.json file at the root of your curr
 
     npm install
 
-The following command will point to a bower.json file at root of your current directory your in to install required bower packages (js,css,html)
+The following command will point to a bower.json file at root of your current directory you're in to install required bower packages (js,css,html)
 
     bower install
 
